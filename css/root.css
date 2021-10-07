@@ -13,7 +13,7 @@ html,body {
 }
 
 #header, #content, #footer{
-	width: 800px;
+	width: 900px;
 	margin:0 auto;
 }
 
@@ -46,7 +46,6 @@ a:hover {
 a[href*="//"]:after {
 	font-weight: 300;
 	font-size: 0.65em;
-	content: "\2197";
 	opacity: 0.25;
 	top: 0px;
 	transition: 0.1s ease-in-out;
@@ -70,6 +69,7 @@ h2{
 	margin-top:1.25em;
 	margin-bottom: 0;
 }
+
 #header{
 	margin-top: 15px;
 	height: 182px;
@@ -79,6 +79,7 @@ h2{
 	position: relative;
 	width: calc(100% - 50px);
 }
+
 #header #name{
 	text-align: left;
 	width: calc(100% - 50px);
@@ -86,20 +87,24 @@ h2{
 	left: 10px;
 	top: 130px;
 }
+
 #header #nav{
 	position: absolute;
 	right: 10px;
 	bottom: 20px;
 }
+
 #header a{
 	color: #888;
 	transition: 0.15s ease-in-out;
 	text-decoration: none;
 }
+
 #header a:hover{
 	color: #aaa;
 	top: -3px;
 }
+
 #content{
 	padding: 15px 20px 20px 20px;
 	text-align: center;
@@ -107,19 +112,23 @@ h2{
 	border-radius: 25px;
 	margin-bottom: 50px;
 }
+
 #footer{
 	max-width: 550px;
 	text-align: center;
 	padding-bottom:80px;
 }
+
 .grid{
 	overflow:hidden;
 	/*margin-bottom: -0.5em;*/
 	margin-top: 5px;
 }
+
 .grid > a:first-child > div{
 	margin-top:20px;
 }
+
 .grid > a > div{
 
 	display: inline-block;
@@ -127,17 +136,18 @@ h2{
 	width: 390px;
 	height: 150px;
 	margin-bottom:10px;
-
 	transition: opacity 0.1s ease-in-out;
-
 }
+
 .grid > a{
 	text-decoration: none;
 	display: inline-block;
 }
+
 .grid > a:hover > div{
 	opacity: 0.5;
 }
+
 .grid > a > div > img{
 	width: 388px;
     height: 100px;
@@ -149,7 +159,9 @@ h2{
 	line-height: 21px;
 	text-align: left;
 	width:100%;
+	text-align: center;
 }
+
 .grid > a > div > div > span{
 	color:#aaa;
 }
@@ -162,9 +174,11 @@ h2{
 	background-size: 200% 100%;
 	bottom: 6px;
 }
+
 .web10#news{
 	left: calc(50% - 372px);
 }
+
 .web10#rss{
 	right: calc(50% - 372px);
 	background-position: -100%;
@@ -187,9 +201,11 @@ h2{
 	margin:50px auto;
 	line-height: 1.7em;
 }
+
 .sidepage h1{
 	text-align: left;
 }
+
 .sidepage input{
 	font-family: monospace;
 	font-weight: 100;
@@ -202,6 +218,7 @@ h2{
 	position: relative;
 	top: -2px;
 }
+
 .sidepage img{
 	margin:0 auto;
 	display: block;
@@ -219,6 +236,7 @@ hr{
 		display:none;
 	}
 }
+
 @media (max-width: 880px){
 	#header #nav{
 		width: 300px;
