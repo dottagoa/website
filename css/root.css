@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 html,body {
     font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -7,30 +8,54 @@ html,body {
     line-height: 1.4em;
     margin: 0;
     width: 100%; height: 100%;
-    background: #333;
+    background: #222;
     color: #fff;
 }
 
 #header, #content, #footer{
-	width: 100%;
-	max-width: 800px;
+	width: 800px;
 	margin:0 auto;
 }
 
-strong, bold {
-    font-weight: bold;
+#header {
+	font-weight: bold;
+}
+
+#content {
+	background: #333;
+}
+
+strong, bold, b {
+    font-weight: 600px;
 }
 
 a {
     color: #c682ee;
     position: relative;
     top: 0px;
-    transition: 0.1s ease-in-out; 
+    transition: 0.1s ease-in-out;
+	text-decoration: none;
 }
 
 a:hover {
     color: #e2bff7;
     top: -2px;
+	text-decoration: underline;
+}
+
+a[href*="//"]:after {
+	font-weight: 300;
+	font-size: 0.65em;
+	content: "\2197";
+	opacity: 0.25;
+	top: 0px;
+	transition: 0.1s ease-in-out;
+}
+
+a[href*="//"]:hover:after {
+	color: #e2bff7;
+	top: -2px;
+	opacity: 1;
 }
 
 h1{
@@ -55,9 +80,10 @@ h2{
 	width: calc(100% - 50px);
 }
 #header #name{
-	width: 250px;
+	text-align: left;
+	width: calc(100% - 50px);
 	position: relative;
-	left: -122px;
+	left: 10px;
 	top: 130px;
 }
 #header #nav{
@@ -76,7 +102,6 @@ h2{
 }
 #content{
 	padding: 15px 20px 20px 20px;
-	width: calc(100% - 50px);
 	text-align: center;
 	border: 5px solid #bbb;
 	border-radius: 25px;
@@ -205,4 +230,31 @@ hr{
 		display: block;
 		height: 0px;
 	}
+}
+
+/* ------- Sections ------- */
+
+section {
+	padding: calc(6em + 5vw) 5vw 8vw 5vw;
+	/* ! Everything below is needed ! */
+	display: none;
+	position: absolute;
+	top: 0;
+	min-height: 100vh;
+	width: 100%;
+	background: var(--bgcolor);
+}
+
+section:target {
+	/* Show section */
+	display: block;
+}
+
+section#home {
+	/* Show #home by default */
+	display: block;
+}
+
+section:target iframe {
+	visibility: visible;
 }
