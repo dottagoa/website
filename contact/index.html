@@ -1,93 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>its rhearmas</title>
 
-<head>
-    <title>its rhearmas</title>
+        <!-- really important stuff, aka META -->
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="encoding" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=450" />
+        <link rel="icon" type="image/png" href="../favicon.png" />
 
-    <!-- really important stuff, aka META -->
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=450">
-    <link rel="icon" type="image/png" href="../favicon.png" />
+        <!-- social card -->
+        <meta itemprop="name" content="its rhearmas" />
+        <meta itemprop="description" content="web designer and professional screwup" />
+        <meta itemprop="image" content="https://rhearm.as/sharing/thumb.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@rhearmas" />
+        <meta name="twitter:title" content="its rhearmas" />
+        <meta name="twitter:description" content="web designer and professional screwup" />
+        <meta name="twitter:creator" content="@rhearmas" />
+        <meta name="twitter:image" content="https://rhearm.as/sharing/thumb.png" />
+        <meta property="og:title" content="its rhearmas" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rhearm.as" />
+        <meta property="og:image" content="https://rhearm.as/sharing/thumb.png" />
+        <meta property="og:description" content="web designer and professional screwup" />
 
-    <!-- social card -->
-    <meta itemprop="name" content="its rhearmas">
-    <meta itemprop="description" content="web designer and professional screwup">
-    <meta itemprop="image" content="https://rhearm.as/sharing/thumb.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@rhearmas">
-    <meta name="twitter:title" content="its rhearmas">
-    <meta name="twitter:description" content="web designer and professional screwup">
-    <meta name="twitter:creator" content="@rhearmas">
-    <meta name="twitter:image" content="https://rhearm.as/sharing/thumb.png">
-    <meta property="og:title" content="its rhearmas">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rhearm.as">
-    <meta property="og:image" content="https://rhearm.as/sharing/thumb.png">
-    <meta property="og:description" content="web designer and professional screwup">
+        <!-- stylesheet(s) -->
+        <link rel="stylesheet" href="../css/root.css" />
+        <style>
+            h3 {
+                border-top: 1px solid #555;
+                padding-top: 20px;
+            }
 
-    <!-- stylesheet(s) -->
-    <link rel="stylesheet" href="../css/root.css">
-    <style>
-        h3 {
-            border-top: 1px solid #555;
-            padding-top: 20px;
-        }
+            body {
+                font-size: 19px;
+            }
 
-        body {
-            font-size: 19px;
-        }
+            li {
+                font-weight: 600;
+            }
+        </style>
+    </head>
 
-        li {
-            font-weight: 600;
-        }
-    </style>
-</head>
+    <body>
+        <div class="sidepage" id="main">
+            <a href="../">(&larr; back)</a>
 
-<body>
-    <div class="sidepage" id="main">
-        <a href="../">(&larr; back)</a>
+            <h1 id="toc_0" style="margin-top: 40px">contact</h1>
+            <p>reach out to me, bother me to no tomorrow, etc</p>
 
-        <h1 id="toc_0" style="margin-top: 40px;">contact</h1>
-        <p>reach out to me, bother me to no tomorrow, etc</p>
+            <h3>primary</h3>
+            <p>the most common ways to talk to me. use these methods first</p>
+            <ul>
+                <li><a href="#" onclick="return show('discord','main');">Discord</a></li>
+            </ul>
 
-        <h3>primary</h3>
-        <p>the most common ways to talk to me. use these methods first</p>
-        <ul>
-            <li><a href="mailto:j@rhearm.as"><b>Email</b></a> <span style="font-weight: 300">(<a href="mailto:j@rhearm.as">j@rhearm.as</a>)</span></li>
-            <li><a href="#" onclick="return show('discord','main');">Discord</a></li>
-        </ul>
-
-        <h3>everything else</h3>
-        <p>these are also the platforms that i use. i usually don't prefer these but you'll still find me in these places</p>
-        <ul>
-            <li><a href="https://twitter.com/rhearmas">Twitter</a></li>
-            <li><a href="https://snapchat.com/add/rhearmas">Snapchat</a></li>
-            <li><a href="https://instagram.com/scenerysux">Instagram</a></li>
-            <li><a href="https://reddit.com/user/rhearmas">Reddit</a></li>
-        </ul>
-    </div>
-
-    <section id="discord">
-        <div class="sidepage" style="margin-left: 250px;">
-            <div class="header">
-                <a href="#" onclick="return show('main','discord');">(&larr; back)</a>
-            </div>
-            <div id="content">
-                <p><b>Discord handle</b>: rhearmas#9001</p>
-                <p><b>Discord server</b>: <a href="https://discord.gg/4zJ8xqV">https://discord.gg/4zJ8xqV</a></p>
-            </div>
+            <h3>everything else</h3>
+            <p>these are also the platforms that i use. i usually don't prefer these but you'll still find me in these places</p>
+            <ul>
+                <li><a href="https://twitter.com/rhearmas">Twitter</a></li>
+                <li><a href="https://snapchat.com/add/rhearmas">Snapchat</a></li>
+                <li><a href="https://instagram.com/scenerysux">Instagram</a></li>
+                <li><a href="https://reddit.com/user/rhearmas">Reddit</a></li>
+            </ul>
         </div>
-    </section>
 
-    <script>
-        function show(shown,hidden){
-            document.getElementById(shown).style.display = "block";
-            document.getElementById(hidden).style.display = "none";
-            return false;
-        }
-    </script>
-</body>
+        <section id="discord">
+            <div class="sidepage" style="margin-left: 250px">
+                <div class="header">
+                    <a href="#" onclick="return show('main','discord');">(&larr; back)</a>
+                </div>
+                <div id="content">
+                    <p><b>Discord handle</b>: rhearmas#9001</p>
+                    <p><b>Discord server</b>: <a href="https://discord.gg/4zJ8xqV">https://discord.gg/4zJ8xqV</a></p>
+                </div>
+            </div>
+        </section>
 
+        <script>
+            function show(shown, hidden) {
+                document.getElementById(shown).style.display = 'block';
+                document.getElementById(hidden).style.display = 'none';
+                return false;
+            }
+        </script>
+    </body>
 </html>
