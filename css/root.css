@@ -21,7 +21,7 @@ body {
 #header,
 #content,
 #footer {
-    width: 100%;
+    width: 85%;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -32,6 +32,11 @@ body {
 
 #content {
     background: #333;
+    padding: 15px 20px 20px 20px;
+    text-align: center;
+    border: 5px solid #bbb;
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 strong,
@@ -98,7 +103,7 @@ h2 {
     width: calc(100% - 50px);
     position: relative;
     left: 10px;
-    top: 130px;
+    top: 100px;
 }
 
 #header #nav {
@@ -118,19 +123,22 @@ h2 {
     top: -3px;
 }
 
-#content {
-    padding: 15px 20px 20px 20px;
-    text-align: center;
-    border: 5px solid #bbb;
-    border-radius: 25px;
-    margin-bottom: 50px;
-}
-
 #footer {
     max-width: 550px;
     text-align: center;
     padding-bottom: 80px;
 }
+
+#logo {
+    width: 35%;
+    border-radius: 50%;
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------- Grid Stuffs ------- */
 
 .grid {
     overflow: hidden;
